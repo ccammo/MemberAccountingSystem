@@ -1,6 +1,6 @@
 ﻿namespace MemberAccountingSystem
 {
-    partial class MASForm1
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             System.Windows.Forms.Label fNameLabel;
             System.Windows.Forms.Label locationLabel;
             System.Windows.Forms.Label actTypeLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MASForm1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.mASDatabaseDataSet = new MemberAccountingSystem.MASDatabaseDataSet();
             this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.memberTableAdapter = new MemberAccountingSystem.MASDatabaseDataSetTableAdapters.MemberTableAdapter();
@@ -55,7 +55,7 @@
             this.fNameTextBox = new System.Windows.Forms.TextBox();
             this.locationTextBox = new System.Windows.Forms.TextBox();
             this.actTypeTextBox = new System.Windows.Forms.TextBox();
-            this.SaveButton1 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             idLabel = new System.Windows.Forms.Label();
             fNameLabel = new System.Windows.Forms.Label();
             locationLabel = new System.Windows.Forms.Label();
@@ -153,7 +153,7 @@
             this.memberBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.memberBindingNavigator.Name = "memberBindingNavigator";
             this.memberBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.memberBindingNavigator.Size = new System.Drawing.Size(749, 27);
+            this.memberBindingNavigator.Size = new System.Drawing.Size(774, 27);
             this.memberBindingNavigator.TabIndex = 0;
             this.memberBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -283,22 +283,22 @@
             this.actTypeTextBox.Size = new System.Drawing.Size(362, 22);
             this.actTypeTextBox.TabIndex = 8;
             // 
-            // SaveButton1
+            // button1
             // 
-            this.SaveButton1.Location = new System.Drawing.Point(395, 227);
-            this.SaveButton1.Name = "SaveButton1";
-            this.SaveButton1.Size = new System.Drawing.Size(175, 50);
-            this.SaveButton1.TabIndex = 9;
-            this.SaveButton1.Text = "Save";
-            this.SaveButton1.UseVisualStyleBackColor = true;
-            this.SaveButton1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Location = new System.Drawing.Point(395, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 50);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // MASForm1
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 328);
-            this.Controls.Add(this.SaveButton1);
+            this.ClientSize = new System.Drawing.Size(774, 412);
+            this.Controls.Add(this.button1);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(fNameLabel);
@@ -308,7 +308,7 @@
             this.Controls.Add(actTypeLabel);
             this.Controls.Add(this.actTypeTextBox);
             this.Controls.Add(this.memberBindingNavigator);
-            this.Name = "MASForm1";
+            this.Name = "Form1";
             this.Text = "Member Accounting System";
             this.Load += new System.EventHandler(this.MASForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mASDatabaseDataSet)).EndInit();
@@ -344,7 +344,7 @@
         private System.Windows.Forms.TextBox fNameTextBox;
         private System.Windows.Forms.TextBox locationTextBox;
         private System.Windows.Forms.TextBox actTypeTextBox;
-        private System.Windows.Forms.Button SaveButton1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MemberAccountingSystem
 {
-    public partial class MASForm1 : Form
+    public partial class Form1 : Form
     {
-        public MASForm1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -34,7 +34,9 @@ namespace MemberAccountingSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Validate();
+            this.memberBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.mASDatabaseDataSet);
         }
     }
 }

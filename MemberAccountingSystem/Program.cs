@@ -16,7 +16,7 @@ namespace MemberAccountingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MASForm1());
+            Application.Run(new Form1());
         }
     }
 }
